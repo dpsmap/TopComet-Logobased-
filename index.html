@@ -47,7 +47,7 @@ nav a{text-decoration:none;font-weight:600;font-size:.92rem;padding:9px 13px;bor
 nav a:hover{background:var(--sky)}
 nav a.btn{color:#fff;padding:11px 20px;margin-left:6px}nav a.btn:hover{background:var(--navy)}
 .burger{display:none;background:var(--sky);border:0;border-radius:12px;width:46px;height:46px;color:var(--ink);cursor:pointer}
-@media(max-width:1120px){
+@media all{
  .burger{display:grid;place-items:center}
  nav{position:absolute;left:0;right:0;top:calc(100% + 8px);background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh);padding:10px;display:none}
  nav.open{display:block}nav ul{flex-direction:column;align-items:stretch}nav a{display:block}
@@ -133,7 +133,11 @@ html[lang=ja] body{font-family:"Noto Sans JP","Plus Jakarta Sans",system-ui,sans
 .pil{background:var(--card);border:1px solid var(--line);border-top:4px solid #d2232a;border-radius:16px;padding:20px;box-shadow:var(--sh)}
 .pil p{margin:0;font-size:.92rem}
 @media(max-width:900px){.fgrid{grid-template-columns:1fr}.fcard{position:static}.pils{grid-template-columns:1fr}}
+@media(min-width:700px){nav{left:auto;width:320px}}
+.lang button[data-l=my]{font-family:"Noto Sans Myanmar",system-ui,sans-serif;font-size:.85rem;line-height:1.6}
+.brand span{white-space:nowrap}
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@600;700&display=swap">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
